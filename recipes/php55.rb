@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'yum-remi'
+
 yum_repository 'remi-php55' do
   description 'Les RPM de remi de PHP 5.5 pour Enterprise Linux 6 - $basearch'
   mirrorlist 'http://rpms.famillecollet.com/enterprise/6/php55/mirror'
